@@ -125,7 +125,7 @@
     color: var(--ink-muted);
   }
 
-  .avatar {
+  /* .avatar {
     flex: none;
     width: 60px;
     height: 60px;
@@ -139,7 +139,26 @@
     font-size: 1.15rem;
     letter-spacing: 0.02em;
     color: var(--accent-ink);
-  }
+  } */
+
+  .avatar {
+    flex: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--rule-strong);
+    background: var(--accent-soft);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 
   /* ---- Meta / document header block ---- */
   .meta {
@@ -307,7 +326,7 @@
     </div>
     <!-- <div class="avatar" aria-hidden="true">profile.png</div> -->
     <div class="avatar" aria-hidden="true">
-      <img src="profile1.png"  alt="Shahnawaz Alam" >
+      <img class="avatar-img" src="profile1.png"  alt="Shahnawaz Alam" >
     </div>
   </div>
 
